@@ -6,7 +6,7 @@ const messagesRouter = require("./routes/messsages.route")
 
 const app = express();
 
-//views template engine
+//views "template engine"
 app.set("view engine" , 'hbs');
 app.set("views" ,path.join(__dirname,'views'));
 
