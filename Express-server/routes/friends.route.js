@@ -3,9 +3,8 @@ const {getFriends,getfriend,postFriend } = require("../controllers/friends.contr
 
 const friendsRouter = express.Router();
 
-friendsRouter.use()
 
-friendsRouter('/').post(postFriend).get( getFriends)
-friendsRouter('/:friendId').get(getfriend)
+friendsRouter.route("/").post(postFriend).get( getFriends)
+friendsRouter.route('/:friendId').get(getfriend)
 
 module.exports = friendsRouter;

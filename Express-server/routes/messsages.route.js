@@ -4,6 +4,6 @@ const {getMessages,postMessages } = require("../controllers/messages.controller"
 
 const messagesRouter = express.Router();
 
-messagesRouter('/').post(postMessages).get( getMessages)
+messagesRouter.route('/').post(postMessages).get( getMessages)
 
 module.exports = messagesRouter;
