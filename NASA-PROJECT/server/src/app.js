@@ -15,8 +15,8 @@ app.use(express.static(path.join(__dirname, ".." , 'public')))
 //routes
 app.use(planetsRouter)
 
-// app.get('/', (req,res)=>{
-//     res.sendFile(path.join(__dirname, '..' ,'public' , 'index.hmtl'))
-// })
+app.get('/', (req,res)=>{
+    res.sendFile(path.join(__dirname, '..' ,'public' , 'index.hmtl'))
+})
 
 module.exports = app;
